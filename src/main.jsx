@@ -8,6 +8,8 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Layout from './Layout/layout.jsx'; 
 import Hero from './components/Hero.jsx';
+import Products from './pages/Products.jsx';
+import ProductDetails from './pages/ProductDetails.jsx';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -18,6 +20,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="home" element={<Hero></Hero>}></Route>
           <Route path="about" element={<About></About>}></Route>
           <Route path="blog" element={<Blog></Blog>}></Route>
+          <Route path="products" element={<Products></Products>}></Route>
+          <Route path="products/:id" element={<ProductDetails></ProductDetails>}></Route>
           <Route path="contact" element={<Contact></Contact>}></Route>
         </Route>
       </Routes>
